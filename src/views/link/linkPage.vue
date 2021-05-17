@@ -331,7 +331,7 @@
             this.getDeviceData();
             this.deptId = this.$cookie.get('deptId')
             /*901框选*/
-            /*this.$nextTick(()=>{
+            this.$nextTick(()=>{
                 console.log(this.cmaFlag,'今天他')
                 let dom = document.getElementById('drawArear')
                 if (dom) {
@@ -410,7 +410,7 @@
                         clearTimeout(timer)
                     }
                 }
-            })*/
+            })
 
         },
         watch: {

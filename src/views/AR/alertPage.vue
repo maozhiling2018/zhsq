@@ -53,6 +53,7 @@
                <div class="commandRightB" v-if="tabIndex=='a'">
                    <div  class="alertTableBox">
                        <el-table
+                               v-loading="tableLoading"
                                ref="filterTable"
                                :data="tableData"
                                max-height="630"
@@ -206,6 +207,7 @@
     export default {
         data(){
             return{
+                tableLoading:false,
                 videoPlayVisible:false,
                 //视频
                 options: {
@@ -252,7 +254,7 @@
                 this.chartShowBox.resize()
             }
         },
-        created(){
+        mounted(){
             this.getAlertList()
             this.beforeUrl = 'http://'+this.$global.deviceUrl+'/archive/media/';
         },
@@ -290,6 +292,7 @@
             },
             //报警列表
             async getAlertList(){
+                this.tableLoading = true
                 let data={
                     pageNum:this.pageIndex,
                     pageSize:this.pageSize,
@@ -300,8 +303,14 @@
                 }
                 let [err, res] = await to(this.$api.AR.getAlert(data));
                 if (err) return;
-                this.tableData = res.data.rows;
-                console.log(this.tableData,'this.tableData');
+                if(res.data && res.data.code==200){
+                    this.tableLoading = false
+                    this.tableData = res.data.rows;
+                    this.totalPage = res.data.total;
+                }else{
+                    this.tableData = []
+                    this.totalPage = 0
+                }
                 /*对列表图片进行裁切*/
                 /*this.$nextTick(()=>{
                     this.tableData.map((item,index)=>{
@@ -312,7 +321,7 @@
                         resizeImage(url,position.w,position.h,position.x,position.y,oCanvasA)
                     })
                 })*/
-                this.totalPage = res.data.total;
+
                 console.log(res.data.rows,'报警列表');
 
             },

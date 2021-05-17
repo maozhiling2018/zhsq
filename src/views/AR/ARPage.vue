@@ -746,10 +746,11 @@
             },
             /*报警预案统计*/
             initChartLine1(data) {
+                console.log(data,'报警预案统计')
                 //数据
                 var XName= ["0~4","4~8","8~12","12~16","16~20","20~24"]
                 var data1 = [data]
-                var Line = ["昕博朗学校路线"];
+                var Line = ["报警数量"];
 
                 var color =['#00f15a','#0696f9','#dcf776'];
 
@@ -774,6 +775,12 @@
                     )
                 })
                 var option1 = {
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'cross'
+                        }
+                    },
                     grid: {
                         left: '11%',
                         top: '5%',
