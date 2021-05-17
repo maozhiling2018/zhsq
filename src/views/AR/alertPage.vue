@@ -255,7 +255,7 @@
             }
         },
         mounted(){
-            this.getAlertList()
+           // this.getAlertList()
             this.beforeUrl = 'http://'+this.$global.deviceUrl+'/archive/media/';
         },
         components:{
@@ -322,7 +322,7 @@
                     })
                 })*/
 
-                console.log(res.data.rows,'报警列表');
+                console.log(res.data,'报警列表');
 
             },
             //获取预警事件及预警当日总数
