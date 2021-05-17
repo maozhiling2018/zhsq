@@ -1,0 +1,598 @@
+//登录框
+.loginBox{
+  .el-input__inner{
+    width: 460px;
+    height: 60px !important;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+  .el-button{
+    height:60px;
+    font-size: 18px;
+    font-family: STJTBZ Regular, STJTBZ Regular-Regular;
+    font-weight: 500;
+    color: #ffffff;
+    width:100%;
+  }
+}
+.el-carousel__mask{
+  background:none !important;
+}
+
+/*联动屏*/
+.linkProp,.mapProp{
+  .el-dialog{
+    background:url("../../assets/images/link/midPropBg.png") no-repeat !important;
+    width:893px;
+    height:595px;
+    background-size:cover;
+    box-shadow: none;
+  }
+  .el-dialog__body{
+    padding:0px 20px;
+  }
+  .el-tabs__nav{
+    width:30%;
+    float:unset;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .el-tabs__item{
+    color:#16DADE;
+    font-size:18px;
+    padding:0px 30px;
+  }
+  .el-tabs__nav-wrap::after{
+    background:#0872FB;
+    height:1px;
+  }
+  .el-tabs__active-bar {
+    background: #16DADE;
+  }
+  .el-tabs__item.is-active,.el-tabs__item:hover{
+    color:#16DADE;
+  }
+}
+.mapProp{
+  .el-tabs__nav{
+    width:18%;
+    float:unset;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .el-carousel__container{
+    height:450px;
+  }
+}
+.el-popper .popper__arrow{
+  display: none !important;
+}
+.el-select-dropdown{
+  background-color:#043775 !important;
+  color: #16DADE;
+  border:1px solid rgba(8,114,210,.5) !important;
+}
+.el-popper{
+  margin-top:0px;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color:rgba(8,114,210,.5) !important;
+}
+.el-select-dropdown__item,.el-radio{
+  color: #16DADE !important;
+}
+.el-form-item{
+  margin-bottom:15px !important;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #FFDB44 !important;
+  background: #FFDB44 !important;
+}
+.el-radio__input.is-checked+.el-radio__label {
+  color: #FFDB44 !important;
+}
+
+/*表格*/
+.el-table__body tr.hover-row.current-row>td, .el-table__body tr.hover-row.el-table__row--striped.current-row>td, .el-table__body tr.hover-row.el-table__row--striped>td, .el-table__body tr.hover-row>td {
+  background:rgba(8,114,250,0.5) !important;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td,.el-table__body tr.current-row>td,.el-table__row--striped.current-row>td{
+  background:rgba(8,114,250,0.5) !important;
+  cursor:pointer;
+}
+.el-table__fixed-right::before, .el-table__fixed::before{
+  background:none;
+}
+.el-table{
+  color:#16EBF0 !important;
+  background:unset !important;
+}
+.el-table th{
+  background:#0971F6 !important;
+  color:#fff;
+  border:0px;
+  padding:10px 0px 10px 0px;
+  font-size:15px;
+  font-weight:normal;
+}
+.el-table td{
+  font-size:15px;
+  background:#09254C;
+  border-bottom:2px solid #091120 !important;
+}
+.el-table tr{
+  background:unset;
+}
+ .el-table th.is-leaf{
+  border:none !important;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before{
+  background:unset !important;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+  background:#091B34 !important;
+}
+.el-table__body tr.current-row>td{
+  background:#091B34 !important;
+}
+.el-date-editor .el-range__icon,.el-date-editor .el-range-input,.el-date-editor .el-range-separator{
+  color:#16EBF0 !important;
+}
+.el-range-editor--mini .el-range-separator{
+  line-height:28px !important;
+}
+.el-range-editor.el-input__inner{
+  padding:6px 6px !important;
+}
+
+/*手风琴*/
+.el-collapse{
+  border-top: 1px solid #162E76 !important;
+  border-bottom: 1px solid #162E76 !important;
+}
+.el-collapse-item__header{
+  color:#16EBF0 !important;
+  text-indent:10px !important;
+  font-size:16px !important;
+  background:#162E76!important;
+  border-bottom: 1px solid #085AC3!important;
+}
+.el-collapse-item__content{
+  background:#1C3993;
+  color:#fff !important;
+  text-align:left !important;
+  padding:20px !important;
+  font-size:14px !important;
+}
+.el-collapse-item__wrap{
+  border-bottom:1px solid #085AC3 !important;
+}
+.el-input-group__append, .el-input-group__prepend{
+  background:unset !important;
+  border:1px solid #085AC3  !important;
+  color:#16EBF0 !important;
+  border-left:none !important;
+}
+.templateItem{
+  .el-input__inner{
+    border-right:none !important;
+  }
+}
+.el-pagination__total{
+  height:36px !important;
+  line-height:36px!important;
+  color:#16EBF0!important;
+}
+.el-pagination button{
+  height:36px !important;
+  line-height: 36px !important;
+}
+.el-pager li{
+  height:36px !important;
+  line-height:36px !important;
+  background:unset !important;
+  color:#16DADE !important;
+}
+.el-pager li.active{
+  background:#16EBF0 !important;
+  color:#fff !important;
+}
+
+/*带边框按钮组*/
+.checkItem{
+  .el-checkbox.is-bordered{
+    background:#eee !important;
+    border:1px solid #0a3c81 !important;
+  }
+  .el-checkbox__inner{
+    width:32px !important;
+    height:32px !important;
+    margin-top:-6px !important;
+    margin-left:-6px !important;
+    border:none !important;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    background:#fff !important;
+  }
+  .el-checkbox__inner::after{
+    border:2px solid #16EBF0 !important;
+    border-left: 0 !important;
+    border-top: 0 !important;
+    height: 15px;
+    left: 14px;
+    top:6px;
+    width:6px;
+  }
+  .el-checkbox.is-bordered.is-checked{
+    background:#16EBF0 !important;
+  }
+  .el-checkbox__input.is-checked+.el-checkbox__label{
+    color:#fff !important;
+    font-size:16px !important;
+  }
+  .el-checkbox__label{
+    color:#ccc !important;
+    font-size:16px !important;
+  }
+
+  .popper__arrow{
+    display: block !important;
+  }
+  .el-popover--plain{
+    padding:10px 20px 20px 20px;
+  }
+}
+.el-popover__title{
+  color:#fff !important;
+}
+/*.el-popover{
+  position:fixed !important;
+  top:100px !important;
+  background:#0a3c81 !important;
+  border:1px solid #0a62d5 !important;
+}*/
+.el-textarea__inner{
+  color:#16EBF0 !important;
+}
+
+//上传照片
+.el-upload-list--picture-card .el-upload-list__item{
+  width:80px !important;
+  height:80px !important;
+}
+.el-upload {
+  border: 1px dashed #16ECF0 !important;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.el-popover{
+  background:#0a3c81 !important;
+  border:1px solid #0a62d5 !important;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev{
+  background:unset !important;
+  border:1px solid #0971F6 !important;
+  color:#eee !important;
+}
+.el-pagination button:disabled{
+  color:#C0C4CC !important;
+}
+.listDiv{
+  height:calc(850px - 180px);
+  overflow: auto;
+  width:96%;
+  margin:0 auto;
+}
+.addDialog{
+  background:#09254C !important;
+  .el-form-item__label,.el-dialog__title,.el-dialog__headerbtn .el-dialog__close{
+    color:#16EBF0;
+  }
+  .el-textarea__inner{
+    background:unset !important;
+    border:1px solid #085AC3 !important;
+  }
+}
+.el-icon-search{
+  cursor: pointer;
+}
+
+/*时间框*/
+.dialogCon{
+  .leftBox{
+     .el-table{
+       .el-button{
+         border:1px solid #16ebf0 !important;
+       }
+     }
+  }
+}
+.el-picker-panel{
+  background:#09254C !important;
+  border:1px solid #085AC3 !important;
+  color:#16EBF0 !important;
+  .el-date-table td{
+    padding:0px !important;
+    span{
+      color:#fff !important;
+    }
+  }
+  .el-date-table th{
+    color:#16EBF0 !important;
+    border-bottom:1px solid #085AC3 !important;
+  }
+  .el-date-range-picker__content.is-left{
+    border:1px solid #085AC3 !important;
+  }
+  .el-date-range-picker__time-header{
+    border-bottom:1px solid #085AC3 !important;
+  }
+  .el-date-table td.in-range div, .el-date-table td.in-range div:hover, .el-date-table.is-week-mode .el-date-table__row.current div, .el-date-table.is-week-mode .el-date-table__row:hover div {
+    background-color: #16EBF0 !important;
+  }
+  .el-date-table td.end-date span, .el-date-table td.start-date span{
+    background:unset !important;
+  }
+  .el-picker-panel__footer{
+    background:#085AC3 !important;
+    border:1px solid #085AC3 !important;
+    color:#16EBF0 !important;
+    .el-button.is-plain:focus, .el-button.is-plain:hover{
+      background:#00ffff !important;
+    }
+    .el-button{
+      min-width:80px !important;
+      background:#409EFF !important;
+      border:1px solid #409EFF !important;
+      color:#fff !important;
+    }
+  }
+}
+
+
+.leftDateRange{
+  input{
+    position:unset !important;
+    opacity:unset !important;
+    margin-top:10px !important;
+  }
+  .el-input__icon{
+    height:0px !important;
+    margin-top:15px !important;
+    line-height:25px !important;
+  }
+}
+.el-loading-mask {
+  position: absolute;
+  z-index: 2000;
+  background-color: rgba(20,50,140,.9) !important;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+.el-table__expand-icon{
+  color:#16EBF0 !important;
+}
+/*默认阿里播放器高度*/
+.prism-player{
+  height:100%;
+}
+
+/*解决文字两端对齐*/
+.peopleBug{
+  .el-form-item label:after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+  }
+  .el-form-item.is-required .el-form-item__label:before {
+    content: none !important;
+  }
+  .el-form-item__label{
+    color:#1EE4EF;
+    font-size:16px;
+    text-align: justify;
+    line-height:26px;
+    height:26px;
+  }
+}
+
+/*下来菜单背景*/
+.el-dropdown-menu{
+  background:rgba(20,50,140,.9) !important;
+  border:1px solid #0971F6 !important;
+  width:260px !important;
+  color:#16EBF0 !important;
+  .el-dropdown-menu__item{
+    color:#fff !important;
+  }
+  .el-dropdown-menu__item:hover{
+    background:#0971F6 !important;
+  }
+}
+.el-dropdown-menu .el-dropdown-menu__item {
+  color: #fff !important;
+}
+
+/*摄像头*/
+
+.player-wrapper,.video-wrapper{
+  width:100%;
+  height:100%;
+}
+.iframeBox{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .emptyText{
+    font-size:18px !important;
+    color:#16EBF0;
+  }
+}
+.video-js .vjs-big-play-button{display: none !important}
+
+/*loading*/
+.el-loading-spinner{
+  top:unset !important;
+  margin-top:20% !important;
+}
+
+/*计数器*/
+.el-input-number__decrease, .el-input-number__increase{
+  background:#0872FA !important;
+  color:#fff !important;
+  height:34px !important;
+}
+.el-input-number__decrease{
+  border-right:1px solid #0872FA !important;
+}
+.el-input-number__increase{
+  border-left:1px solid #0872FA !important;
+}
+
+/*禁止点击*/
+.notClick{
+
+  pointer-events: none;
+}
+
+/*球机云控div*/
+.ballPtz_small{
+  position:absolute;
+  bottom:0px;
+  right:5px;
+  width:80PX;
+  height:110PX;
+  background:rgba(0,30,80,.8);
+  img{
+    width:auto !important;
+    height:100% !important;
+  }
+  .commandBox{
+    width:80PX;
+    height:80PX;
+    left:5px;
+    top:0px;
+    position:relative;
+    .yCenter{
+      top:20PX;
+      left:20PX;
+      position:absolute;
+      width:30PX;
+      height:30PX;
+      z-index:3;
+    }
+    .yTop{
+      cursor: pointer;
+      width:25PX;
+      height:25PX;
+      top:0PX;
+      left:10PX;
+      position:absolute;
+      z-index:2;
+    }
+    .yBottom{
+      cursor: pointer;
+      width:25PX;
+      height:25PX;
+      position:absolute;
+      bottom:10PX;
+      z-index:2;
+      left:10PX;
+    }
+    .yLeft{
+      cursor: pointer;
+      width:25PX;
+      height:50PX;
+      position:absolute;
+      left:0PX;
+      z-index:2;
+      top:10PX;
+    }
+    .yRight{
+      cursor: pointer;
+      position:absolute;
+      z-index:2;
+      top:10PX;
+      right:10PX;
+      width:25PX;
+      height:50PX;
+    }
+  }
+  .zoomBox{
+    width:80PX;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i{
+      font-size:12PX !important;
+    }
+  }
+  .zoomBtn{
+    width:16PX;
+    padding:10px 12px;
+    display: flex;
+    justify-content: center;
+    height:10PX;
+  }
+}
+.videoBtn{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:2;
+}
+/*虚线框*/
+.react-box {
+ /* width: 100px;
+  height: 100px;*/
+  z-index:100;
+  border: 2px dashed #F8309D;
+  position: absolute;
+  cursor: pointer;
+  visibility: hidden;
+  text-align: center;
+}
+.react-box1 {
+  width: 60px;
+  height: 100px;
+  z-index:100;
+  border: 2px dashed #F8309D;
+  position: absolute;
+  cursor: pointer;
+  visibility: hidden;
+  text-align: center;
+}
+.screenBox{
+  position: absolute;
+  bottom:0px;
+  left:0px;
+  z-index:999;
+}
+.imgVideo{
+  width:100%;
+  height:100%;
+}
+.faceSize{
+  width:80px;
+  height:80px;
+}
+.el-date-table td.disabled div {
+  background-color: rgba(20,80,170,0.5) !important;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #666;
+}
+.el-button--text{
+  display: none !important;
+}

@@ -1,0 +1,227 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+
+}
+*{
+  /* -webkit-font-smoothing:antialiased; */
+  -webkit-font-smoothing:none;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+ul{margin:0px;padding:0px;list-style: none;}
+input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-text-fill-color: #333 !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+  background-color:transparent;
+  background-image: none;
+  transition: background-color 50000s ease-in-out 0s; //背景色透明  生效时长  过渡效果  启用时延迟的时间
+}
+input {
+  background-color:transparent;
+}
+a{text-decoration: none}
+//滚动条样式
+.lensBox .content::-webkit-scrollbar,.alertTableBox::-webkit-scrollbar,.el-table__body-wrapper::-webkit-scrollbar,.treeBox::-webkit-scrollbar,.listDiv::-webkit-scrollbar,.visitorDeviceBox::-webkit-scrollbar,.conBox::-webkit-scrollbar,.monitorBox::-webkit-scrollbar,.publicScroll::-webkit-scrollbar{/*滚动条整体样式*/
+  width: 8px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px;
+}
+.lensBox .content::-webkit-scrollbar-thumb,.alertTableBox::-webkit-scrollbar-thumb,.el-table__body-wrapper::-webkit-scrollbar-thumb,.treeBox::-webkit-scrollbar-thumb,.listDiv::-webkit-scrollbar-thumb,.visitorDeviceBox::-webkit-scrollbar-thumb,.conBox::-webkit-scrollbar-thumb,.monitorBox::-webkit-scrollbar-thumb,.publicScroll::-webkit-scrollbar-thumb {/*滚动条方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(2,44,153,.6);
+  background:linear-gradient( #16DADE,#0575E6 );
+}
+.lensBox .content::-webkit-scrollbar-track,.alertTableBox::-webkit-scrollbar-track,.el-table__body-wrapper::-webkit-scrollbar-track,.treeBox::-webkit-scrollbar-track,.listDiv::-webkit-scrollbar-track,.visitorDeviceBox::-webkit-scrollbar-track,.conBox::-webkit-scrollbar-track,.monitorBox::-webkit-scrollbar-track,.publicScroll::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+  /* border-radius: 10px; */
+  /* background: #EDEDED; */
+  border: none;
+  background: none;
+}
+.paddingL5{padding-left:5px;}
+.paddingL10{padding-left:20px;}
+.padding10{padding:10px;}
+.padding0{padding:0px !important;}
+.paddingT10{padding-top:10px;}
+.paddingT25{padding-top:25px;}
+.margin0{margin:0px;}
+.margin5{margin:5px 0px;}
+.margin10{ margin:10px;}
+.marginT10{margin-top:10px;}
+.marginT20{margin-top:20px;}
+.marginL10{margin-left:10px;}
+.marginL20{margin-left:20px;}
+.textLeft{
+  text-align:left;
+}
+.textCenter{text-align:center;}
+.textIndent10{
+  text-indent:10px;
+}
+.width100{width:100% !important;}
+/*字体*/
+.font16 { font-size: 16px;}
+.font20 { font-size: 20px;}
+.font24 { font-size: 24px;}
+
+
+/*布局1*/
+.el-row-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.borderBottom{
+  border-bottom:10px solid #000;
+}
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
+.el-input__inner{
+  background:unset !important;
+  border:1px solid #085AC3 !important;
+  color:#16EBF0 !important;
+  height:36px !important;
+  line-height:36px !important;
+}
+.el-select .el-input .el-select__caret{
+  color:#16EBF0 !important;
+}
+input::-webkit-input-placeholder {
+  color: #16DADE !important;
+}
+.loginMain{
+  .el-input__inner{
+    background:#fff !important;
+    border:none !important;
+    color:#333 !important;
+  }
+  input::-webkit-input-placeholder {
+    color: #666 !important;
+  }
+}
+
+.el-table td, .el-table th.is-leaf{
+  border-bottom-color:unset;
+}
+/*颜色*/
+.yellow{ color:#FFDB44;}
+.color1{color:#16EBF0;}
+.color2{color:#fff;}
+.red{color:#FF0084;}
+/*按钮样式*/
+.buttonStyle{
+  background:unset !important;
+  border:1px solid #0872FB !important;
+  color:#16EBF0 !important;
+  font-size:14px;
+}
+/*分页*/
+.el-pagination{
+  color: #16EBF0;
+}
+.el-pagination.is-background .btn-next.disabled, .el-pagination.is-background .btn-next:disabled, .el-pagination.is-background .btn-prev.disabled, .el-pagination.is-background .btn-prev:disabled, .el-pagination.is-background .el-pager li.disabled {
+  color: rgba(22,235,240,.5) !important;
+}
+.el-pagination.is-background .btn-next, .el-pagination.is-background .btn-prev, .el-pagination.is-background .el-pager li{
+  background-color:unset !important;
+  border:1px solid #0971F6 !important;
+  color:#16EBF0 !important;
+}
+.el-pagination button:disabled{
+  background:unset !important;
+  border:1px solid #0971F6 !important;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background:#0971F6 !important;
+  color:#fff;
+}
+.el-button--primary{
+  background:#0971F6 !important;
+  color:#fff;
+  border:1px solid #0971F6 !important;
+}
+.el-button--edit{
+  background:#17DADE !important;
+  color:#000 !important;
+  border:1px solid #17DADE !important;
+}
+.el-button--delete{
+  background:none !important;
+  color:#16EBF0 !important;
+  border:1px solid #16EBF0 !important;
+}
+.el-button--zoomPlus{
+  background:#0872FA !important;
+  color:#fff !important;
+  border:1px solid #0872FA !important;
+  box-shadow: none !important;
+  line-height:0PX !important;
+  i{
+    font-size:16PX !important;
+    line-height:unset !important;
+  }
+}
+.el-button--zoomMinus{
+  background:#F8309D !important;
+  color:#fff !important;
+  border:1px solid #F8309D !important;
+  box-shadow: none !important;
+  line-height:0PX !important;
+  i{
+    font-size:16PX !important;
+    line-height:unset !important;
+  }
+}
+.el-button--save{
+  background:#E6A23C !important;
+  color:#fff !important;
+  border:1px solid #E6A23C !important;
+}
+
+
+.el-upload--picture-card{
+  background:unset !important;
+  border:1px solid #0a62d5 !important;
+  width:80px !important;
+  height:80px !important;
+  line-height:80px !important;
+}
+.el-upload--picture-card i{
+  color:#086BEC !important;
+}
+
+/*高度*/
+.height740{
+  height:740px !important;
+}
+.height190{height:190px !important;}
+.height240{ height:210px !important;}
+.height570{ height:570px !important;}
+.height290{
+  height:285px !important;
+}
+
+/*公共滚动条*/
+.publicScroll{
+  height:calc(850px - 230px);
+  overflow-y: auto;
+}
+.publicScroll::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 10px!important;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px!important;
+}
+.publicScroll::-webkit-scrollbar-thumb {/*滚动条方块*/
+  border-radius: 10px !important;
+  -webkit-box-shadow: inset 0 0 5px rgba(2,44,153,.6)!important;
+  background:rgba(2,44,153,.6)!important;
+}
+.publicScroll::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+  /* border-radius: 10px; */
+  /* background: #EDEDED; */
+  border: none!important;
+  background: none!important;
+}
