@@ -13,11 +13,6 @@
                 <el-tab-pane label="图片" name="first">
                     <div class="showBox"><img :src="mapData.picture" alt=""></div>
                 </el-tab-pane>
-                <el-tab-pane label="视频" name="second">
-                    <div class="showBox">
-                        <img :src="mapData.video" class="imgVideo">
-                    </div>
-                </el-tab-pane>
                <!-- <el-tab-pane label="实时监控" name="third">
                     <div class="showBox"><img src="../../assets/images/link/testImg.png" alt=""></div>
                 </el-tab-pane>-->
