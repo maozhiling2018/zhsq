@@ -219,12 +219,13 @@ export default {
             optionsData:[]
         }
     },
-    created(){
+    mounted(){
+        this.initDeviceData()
         this.deptId = this.$cookie.get('deptId')
         this.getTreeList()
         this.getMapInfo()
         this.getIndexData()
-        this.initDeviceData()
+
         this.beforeUrl = 'http://'+this.$global.deviceUrl+'/live/media/'
 
     },
