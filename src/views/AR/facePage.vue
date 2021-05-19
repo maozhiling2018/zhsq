@@ -1,4 +1,4 @@
-<template>
+浠浠·<template>
     <el-dialog
             title="人脸识别"
             :visible.sync="dialogVisible"
@@ -1447,7 +1447,12 @@
             },
             /*获取服务器名称*/
             getServerName(){
-                this.$http.get('/xpi/hosts').then((res)=>{
+                this.$http.get('/xpi/hosts',{
+                    auth:{
+                        username:'root',
+                        password:'root'
+                    }
+                }).then((res)=>{
                     console.log(res,'ddddddddddd')
                     this.serverName = res.data[0]
                 })
