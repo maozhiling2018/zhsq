@@ -220,10 +220,11 @@ export default {
         }
     },
     mounted(){
+        this.getMapInfo()
         this.initDeviceData()
         this.deptId = this.$cookie.get('deptId')
         this.getTreeList()
-        this.getMapInfo()
+
         this.getIndexData()
 
         this.beforeUrl = 'http://'+this.$global.deviceUrl+'/live/media/'
@@ -231,7 +232,7 @@ export default {
     },
     props: ['searchVal'],
     watch: {
-        searchVal: function (val) {
+        searchVal: (val)=> {
             this.deptId = val;
             console.log(this.deptId,'22222222222222');
             this.getIndexData()
@@ -441,7 +442,7 @@ export default {
             }
             let [err,res] = await to(this.$api.AR.getCommuniteInfo(data))
             if(err) return
-            console.log(res.data.data,'小区详情');
+            console.log(res,'小区详情');
             this.mapData = res.data.data;
           const coor = JSON.parse(this.mapData.core);
           console.log(coor,'coor');
@@ -588,7 +589,9 @@ export default {
         },
         /*关闭摄像头*/
         handleClose(item){
+            console.log(item,'mmm')
             item.propVisible = false;
+            item.liveShow = true;
             this.screen()
             item.videoUrl = ''
         },

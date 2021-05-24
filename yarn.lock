@@ -10206,7 +10206,7 @@ vue-aliplayer-v2@^1.2.7:
 
 vue-baidu-map-v3@^1.0.2:
   version "1.0.2"
-  resolved "https://registry.npm.taobao.org/vue-baidu-map-v3/download/vue-baidu-map-v3-1.0.2.tgz#7e55e4af1ff6cfa7f864ccb040da1369ba875e80"
+  resolved "https://registry.nlark.com/vue-baidu-map-v3/download/vue-baidu-map-v3-1.0.2.tgz#7e55e4af1ff6cfa7f864ccb040da1369ba875e80"
   integrity sha1-flXkrx/2z6f4ZMywQNoTabqHXoA=
   dependencies:
     bmaplib.curveline "^1.0.0"
